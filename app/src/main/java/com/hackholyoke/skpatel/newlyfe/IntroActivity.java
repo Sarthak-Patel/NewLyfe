@@ -28,7 +28,7 @@ public class IntroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_intro);
+        setContentView(R.layout.activity_intro);
         /*
         ATTENTION: This was auto-generated to implement the App Indexing API.
         See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -82,13 +82,6 @@ public class IntroActivity extends AppCompatActivity {
     public void playIntroMusic() {
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.introsong);
         mediaPlayer.start();
-        try {
-            Thread.sleep(15000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        mediaPlayer.stop();
-        mediaPlayer.release();
     }
 
 
@@ -114,6 +107,8 @@ public class IntroActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client.disconnect();
+        mediaPlayer.stop();
+        mediaPlayer.release();
     }
 
     /**
