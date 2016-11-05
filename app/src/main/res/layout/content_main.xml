@@ -66,6 +66,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp">
 
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textClock"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="24sp"
+            android:textAlignment="center" />
+
         <TextView
             android:text="First"
             android:layout_width="match_parent"
