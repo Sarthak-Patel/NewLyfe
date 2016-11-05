@@ -34,11 +34,6 @@
         android:weightSum="1"
         android:layout_height="600dp">
 
-        <VideoView
-            android:layout_width="wrap_content"
-            android:layout_height="363dp"
-            android:id="@+id/videoView" />
-
         <TextView
             android:text="Quote"
             android:layout_width="match_parent"
