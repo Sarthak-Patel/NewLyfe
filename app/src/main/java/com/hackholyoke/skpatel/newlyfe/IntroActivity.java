@@ -34,7 +34,6 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
         client = new GoogleApiClient.Builder(this).addApi(API).build();
         Button btnDeadline = (Button) findViewById(R.id.btnDeadline);
         btnDeadline.setOnClickListener(this);
