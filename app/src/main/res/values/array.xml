@@ -2,25 +2,23 @@
 <resources>
 
     <string-array name="myArray_deadline">
-        <item>string 1</item>
-        <item>string 2</item>
-        <item>string 3</item>
-        <item>string 4</item>
-        <item>string 5</item>
+        <item>Dreams can come true, but dreams need ACTIONHello</item>
+        <item>"Your best ideas, those eureka moments that turn the world upside down, seldom come when you're juggling emails, rushing to meet the 5 P.M. deadline or straining to make your voice heard in a high-stress meeting. They come when you're walking the dog, soaking in the bath or swinging in a hammock."</item>
+        <item>"The hardest part of writing is the first draft, and the closer you get to your deadline, the messier your workspace becomes - but that's the same with any creative outlet."</item>
+        <item>The natural urge when running a distance is to push harder and finish sooner - to race against time. Every second behind a deadline is a little defeat.</item>
+        <item>"Dreams can come true, but dreams need ACTION"</item>
     </string-array>
     <string-array name="myArray_lost">
-        <item>string 1</item>
-        <item>string 2</item>
-        <item>string 3</item>
-        <item>string 4</item>
-        <item>string 5</item>
+        <item>What can I do NOW to beat this problem What can I do NOW to create a life of SUCCESS</item>
+        <item>"The new year is not going to save you Only you can save you!If you don't accept full responsibility for your life No resolution, no goal, no dream will save you."</item>
+        <item>"Holding on to grudges and negative feelings from years past will never get you out of the crappy situation you are in."</item>
     </string-array>
     <string-array name="myArray_workout">
-        <item>string 1</item>
-        <item>string 2</item>
-        <item>string 3</item>
-        <item>string 4</item>
-        <item>string 5</item>
+        <item>"Sweat is just fat crying"</item>
+        <item>"You are already in pain might as well get a REWARD out of it!"</item>
+        <item>"You’re going to have to let it hurt. Let it suck. The harder you work, the better you will look. Your appearance isn’t parallel to how heavy you lift, it’s parallel to how hard you work." </item>
+        <item>"You have to push past your perceived limits, push past that point you thought was as far as you can go." </item>
+
     </string-array>
 
 </resources>
