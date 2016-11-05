@@ -26,12 +26,11 @@ public class IntroActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
     private MediaPlayer mediaPlayer;
-    private String chosen;
+    private String myString = getResources().getString(R.string.chosen);
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         /*
@@ -49,6 +48,7 @@ public class IntroActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        myString="Workout";
                         Intent intent = new Intent("com.hackholyoke.skpatel.newlyfe.ChoiceActivity");
                         startActivity(intent);
                     }
