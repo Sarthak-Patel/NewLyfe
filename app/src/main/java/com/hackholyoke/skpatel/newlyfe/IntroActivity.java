@@ -8,12 +8,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import java.util.Calendar;
+import java.util.Random;
+
 import static com.google.android.gms.appindexing.AppIndex.*;
 
 public class IntroActivity extends AppCompatActivity implements View.OnClickListener {
@@ -26,14 +29,12 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
     private MediaPlayer mediaPlayer;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-        /*
-        ATTENTION: This was auto-generated to implement the App Indexing API.
-        See https://g.co/AppIndexing/AndroidStudio for more information.
-        */
+
         client = new GoogleApiClient.Builder(this).addApi(API).build();
         Button btnDeadline = (Button) findViewById(R.id.btnDeadline);
         btnDeadline.setOnClickListener(this);
@@ -43,6 +44,7 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         btnWorkout.setOnClickListener(this);
         determineIntroStatus();
     }
+
 
     @Override
     public void onClick(View v) {

@@ -8,4 +8,10 @@
     <string name="title_activity_second_screen">SecondScreen</string>
     <string name="title_activity_choice">ChoiceActivity</string>
     <string name="chosen">Chosen</string>
+    <string-array name="quotes_deadlines">
+        <item>A </item>
+        <item>B </item>
+        <item>C </item>
+        <item>D </item>
+    </string-array>
 </resources>

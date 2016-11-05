@@ -55,9 +55,25 @@ public class ChoiceActivity extends AppCompatActivity {
         } else if (state == 2) {
             textView.setText(Lost);
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.lostspeech);
+            Resources res = getResources();
+
+            mTestArray = res.getStringArray(R.array.myArray);
+
+            String q = mTestArray[rgenerator.nextInt(mTestArray.length)];
+
+            TextView tv = (TextView) findViewById(R.id.Quote);
+            tv.setText(q);
         } else if (state == 3) {
             textView.setText(Workout);
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.workoutspeech);
+            Resources res = getResources();
+
+            mTestArray = res.getStringArray(R.array.myArray);
+
+            String q = mTestArray[rgenerator.nextInt(mTestArray.length)];
+
+            TextView tv = (TextView) findViewById(R.id.Quote);
+            tv.setText(q);
         }
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
