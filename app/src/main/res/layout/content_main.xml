@@ -43,4 +43,15 @@
         android:textColor="@android:color/white"
         android:textSize="36sp"
         android:textAlignment="center" />
+
+    <Button
+        android:text="Tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/button"
+        tools:text="Tasks"
+        android:textSize="18sp" />
 </RelativeLayout>
