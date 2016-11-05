@@ -44,7 +44,7 @@ public class ChoiceActivity extends AppCompatActivity {
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.deadlinespeech);
             Resources res = getResources();
 
-            mTestArray = res.getStringArray(R.array.myArray);
+            mTestArray = res.getStringArray(R.array.myArray_deadline);
 
             String q = mTestArray[rgenerator.nextInt(mTestArray.length)];
 
@@ -57,7 +57,7 @@ public class ChoiceActivity extends AppCompatActivity {
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.lostspeech);
             Resources res = getResources();
 
-            mTestArray = res.getStringArray(R.array.myArray);
+            mTestArray = res.getStringArray(R.array.myArray_lost);
 
             String q = mTestArray[rgenerator.nextInt(mTestArray.length)];
 
@@ -68,7 +68,7 @@ public class ChoiceActivity extends AppCompatActivity {
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.workoutspeech);
             Resources res = getResources();
 
-            mTestArray = res.getStringArray(R.array.myArray);
+            mTestArray = res.getStringArray(R.array.myArray_workout);
 
             String q = mTestArray[rgenerator.nextInt(mTestArray.length)];
 
