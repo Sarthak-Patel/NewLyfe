@@ -134,9 +134,9 @@
         android:contentDescription="Four"
         android:textSize="30sp"
         android:textAlignment="center"
+        android:layout_marginTop="39dp"
         android:layout_below="@+id/A"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="44dp" />
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
