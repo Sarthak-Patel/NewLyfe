@@ -16,8 +16,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import java.util.Calendar;
 import static com.google.android.gms.appindexing.AppIndex.*;
 
-public class IntroActivity extends AppCompatActivity {
-    public static Button button_test;
+public class IntroActivity extends AppCompatActivity implements View.OnClickListener {
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -36,24 +35,36 @@ public class IntroActivity extends AppCompatActivity {
         See https://g.co/AppIndexing/AndroidStudio for more information.
         */
         client = new GoogleApiClient.Builder(this).addApi(API).build();
+        Button btnDeadline = (Button) findViewById(R.id.btnDeadline);
+        btnDeadline.setOnClickListener(this);
+        Button btnLost = (Button) findViewById(R.id.btnLost);
+        btnLost.setOnClickListener(this);
+        Button btnWorkout = (Button) findViewById(R.id.btnWorkout);
+        btnWorkout.setOnClickListener(this);
         determineIntroStatus();
-        OnClickButtonListener();
     }
 
-    public void OnClickButtonListener() {
-        button_test = (Button)findViewById(R.id.btnWorkout);
-        button_test.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(com.hackholyoke.skpatel.newlyfe.IntroActivity.this, com.hackholyoke.skpatel.newlyfe.ChoiceActivity.class);
-                        intent.putExtra("State", 3);
-                        startActivity(intent);
-                    }
-                }
-        );
-
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(com.hackholyoke.skpatel.newlyfe.IntroActivity.this, com.hackholyoke.skpatel.newlyfe.ChoiceActivity.class);
+        switch(v.getId()) {
+            case R.id.btnDeadline:
+                intent.putExtra("State", 1);
+                startActivity(intent);
+                break;
+            case R.id.btnLost:
+                intent.putExtra("State", 2);
+                startActivity(intent);
+                break;
+            case R.id.btnWorkout:
+                intent.putExtra("State", 3);
+                startActivity(intent);
+                break;
+            default:
+                break;
+        }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
