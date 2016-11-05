@@ -26,10 +26,12 @@ public class IntroActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
     private MediaPlayer mediaPlayer;
+    private String chosen;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         /*
