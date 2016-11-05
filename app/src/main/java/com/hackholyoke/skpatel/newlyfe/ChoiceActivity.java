@@ -21,7 +21,7 @@ public class ChoiceActivity extends AppCompatActivity {
         String Deadline = "Deadline";
         String Lost = "Lost";
         if(state == 1) {
-            textView.setText(Workout);
+            textView.setText(Deadline);
         }
         else if(state == 2) {
             textView.setText(Lost);
