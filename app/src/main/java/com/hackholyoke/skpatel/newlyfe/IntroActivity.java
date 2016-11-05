@@ -47,7 +47,7 @@ public class IntroActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent("com.hackholyoke.skpatel.newlyfe.ChoiceActivity");
-                        intent.putExtra("State", 1);
+                        intent.putExtra("State", 3);
                         startActivity(intent);
                     }
                 }

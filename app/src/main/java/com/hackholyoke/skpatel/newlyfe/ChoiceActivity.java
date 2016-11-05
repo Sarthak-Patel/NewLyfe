@@ -8,7 +8,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 public class ChoiceActivity extends AppCompatActivity {
-    public String myString = getResources().getString(R.string.chosen);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
