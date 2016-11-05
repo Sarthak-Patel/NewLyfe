@@ -134,9 +134,10 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
         AppIndexApi.end(client, getIndexApiAction());
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.disconnect();
         mediaPlayer.stop();
         mediaPlayer.release();
+        client.disconnect();
+
     }
 
     /**
