@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -28,7 +27,7 @@ public class IntroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), )
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.introsong);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
         /*
@@ -37,6 +36,14 @@ public class IntroActivity extends AppCompatActivity {
         */
         client = new GoogleApiClient.Builder(this).addApi(API).build();
         determineIntroStatus();
+        mediaPlayer.start();
+        try {
+            Thread.sleep(15000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        mediaPlayer.stop();
+        mediaPlayer.release();
     }
 
     @Override
