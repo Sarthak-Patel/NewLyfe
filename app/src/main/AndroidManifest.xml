@@ -27,8 +27,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".GoalsScreen"
-            android:label="@string/title_activity_second_screen"
+            android:name=".ChoiceActivity"
+            android:label="@string/title_activity_choice"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -22,37 +22,27 @@
         android:layout_alignParentStart="true">
 
         <Button
-            android:text="Goals"
+            android:text="Deadlines"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/btnTasks"
-            tools:text="Goals"
-            android:textSize="14sp"
+            android:id="@+id/btnDeadline"
             android:layout_weight="1" />
 
         <Button
-            android:text="Quotes/Vids"
+            android:text="Lost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/btnQuotes"
-            android:textSize="14sp"
-            android:elevation="0dp"
-            android:contentDescription="Quotes and Vids"
+            android:id="@+id/btnLost"
             android:layout_weight="1" />
 
         <Button
-            android:text="Evaluate"
+            android:text="Workout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/btnEvaluation"
+            android:id="@+id/btnWorkout"
             android:textSize="14sp"
             android:layout_weight="1" />
 
