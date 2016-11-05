@@ -49,68 +49,6 @@
     </LinearLayout>
 
     <TextView
-        android:text="Step"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:id="@+id/Step"
-        tools:text="Step"
-        android:contentDescription="SecondParagraph"
-        android:textColor="@android:color/white"
-        android:textSize="36sp"
-        android:textAlignment="center"
-        android:layout_below="@+id/First"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="To"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:id="@+id/To"
-        tools:text="To"
-        android:contentDescription="Three"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:layout_below="@+id/Step"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="First"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/First"
-        tools:text="First"
-        android:contentDescription="First"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@android:color/white"
-        android:typeface="normal"
-        android:textSize="36sp"
-        android:textAllCaps="false"
-        android:textAlignment="center"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="28dp" />
-
-    <TextView
-        android:text="A"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/A"
-        android:textColor="@android:color/white"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:layout_below="@+id/To"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp"
-        tools:text="A" />
-
-    <TextView
         android:text="TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -125,17 +63,87 @@
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:text="Step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Step"
+        tools:text="Step"
+        android:contentDescription="SecondParagraph"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/First"
+        android:layout_alignBottom="@+id/First"
+        android:layout_toRightOf="@+id/First"
+        android:layout_toEndOf="@+id/First"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp" />
+
+    <TextView
+        android:text="A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/A"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        tools:text="A"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBaseline="@+id/To"
+        android:layout_alignBottom="@+id/To"
+        android:layout_toRightOf="@+id/To"
+        android:layout_toEndOf="@+id/To" />
+
+    <TextView
+        android:text="To"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/To"
+        tools:text="To"
+        android:contentDescription="Three"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignBottom="@+id/Step"
+        android:layout_toRightOf="@+id/Step"
+        android:layout_toEndOf="@+id/Step" />
+
+    <TextView
         android:text="Successful"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Successful"
         android:textColor="@android:color/white"
         tools:text="Successful"
         android:contentDescription="Four"
-        android:textSize="30sp"
+        android:textSize="36sp"
         android:textAlignment="center"
-        android:layout_marginTop="36dp"
-        android:layout_below="@+id/A"
+        android:layout_alignBottom="@+id/A"
+        android:layout_toRightOf="@+id/A"
+        android:layout_toEndOf="@+id/A"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:text="First"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/First"
+        tools:text="First"
+        android:contentDescription="First"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:typeface="normal"
+        android:textSize="36sp"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginStart="105dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
