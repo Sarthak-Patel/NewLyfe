@@ -76,6 +76,7 @@ public class ChoiceActivity extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client.connect();
         AppIndex.AppIndexApi.start(client, getIndexApiAction());
+        mediaPlayer.start();
     }
 
     @Override
@@ -88,5 +89,11 @@ public class ChoiceActivity extends AppCompatActivity {
         mediaPlayer.stop();
         mediaPlayer.release();
         client.disconnect();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mediaPlayer.stop();
     }
 }
