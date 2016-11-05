@@ -1,11 +1,14 @@
 package com.hackholyoke.skpatel.newlyfe;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.Thing;
@@ -15,7 +18,7 @@ import static com.google.android.gms.appindexing.AppIndex.*;
 import static com.hackholyoke.skpatel.newlyfe.R.layout.activity_intro;
 
 public class IntroActivity extends AppCompatActivity {
-
+    public static Button button_test;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -35,8 +38,22 @@ public class IntroActivity extends AppCompatActivity {
         */
         client = new GoogleApiClient.Builder(this).addApi(API).build();
         determineIntroStatus();
+        OnClickButtonListener();
     }
 
+    public void OnClickButtonListener() {
+        button_test = (Button)findViewById(R.id.btnWorkout);
+        button_test.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent("com.hackholyoke.skpatel.newlyfe.ChoiceActivity");
+                        startActivity(intent);
+                    }
+                }
+        );
+
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
