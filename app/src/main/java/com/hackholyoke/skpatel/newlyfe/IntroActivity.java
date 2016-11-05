@@ -26,7 +26,7 @@ public class IntroActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
     private MediaPlayer mediaPlayer;
-    public String myString = getResources().getString(R.string.chosen);
+    public String string = getString(R.string.chosen);
 
 
     @Override
