@@ -11,11 +11,22 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.hackholyoke.skpatel.newlyfe.MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:fadeScrollbars="false">
+    tools:showIn="@layout/activity_main">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:text=Hello
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView3"
+        tools:text="Hello"
+        android:contentDescription="First"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:typeface="normal"
+        android:textSize="36sp"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 </RelativeLayout>
