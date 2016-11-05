@@ -10,10 +10,9 @@ import android.widget.TextView;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-
 import java.util.Calendar;
-
 import static com.google.android.gms.appindexing.AppIndex.*;
+import static com.hackholyoke.skpatel.newlyfe.R.layout.activity_intro;
 
 public class IntroActivity extends AppCompatActivity {
 
@@ -25,25 +24,17 @@ public class IntroActivity extends AppCompatActivity {
     private GoogleApiClient client;
     private MediaPlayer mediaPlayer;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.introsong);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        setContentView(activity_intro);
         /*
         ATTENTION: This was auto-generated to implement the App Indexing API.
         See https://g.co/AppIndexing/AndroidStudio for more information.
         */
         client = new GoogleApiClient.Builder(this).addApi(API).build();
         determineIntroStatus();
-        mediaPlayer.start();
-        try {
-            Thread.sleep(15000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        mediaPlayer.stop();
-        mediaPlayer.release();
     }
 
     @Override
@@ -88,6 +79,18 @@ public class IntroActivity extends AppCompatActivity {
         }
     }
 
+    public void playIntroMusic() {
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.introsong);
+        mediaPlayer.start();
+        try {
+            Thread.sleep(15000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        mediaPlayer.stop();
+        mediaPlayer.release();
+    }
+
 
     @Override
     public void onStart() {
@@ -100,6 +103,7 @@ public class IntroActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         AppIndexApi.start(client, getIndexApiAction());
+        playIntroMusic();
     }
 
     @Override
