@@ -13,4 +13,102 @@
     tools:context="com.hackholyoke.skpatel.newlyfe.GoalsScreen"
     tools:showIn="@layout/activity_goals">
 
+    <TextView
+        android:text="Top5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Top5"
+        android:textSize="24sp"
+        tools:text="Top 5 Goals of the Month"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="insideInset"
+        android:clipToPadding="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/scrollBox">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FirstGoal"
+                android:ems="10"
+                android:layout_marginTop="45dp"
+                android:id="@+id/FirstGoal"
+                android:textAlignment="center"
+                android:inputType="text|number"
+                android:hint="Write your first goal"
+                android:singleLine="false"
+                android:selectAllOnFocus="true"
+                tools:text="Write your first goal!"
+                android:textSize="24sp"
+                android:typeface="normal"
+                android:layout_below="@+id/Top5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:text="Write your second goal!"
+                android:ems="10"
+                android:id="@+id/SecondGoal"
+                android:layout_weight="0.04"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:hint="Write your second goal of the month"
+                android:layout_marginTop="66dp"
+                android:layout_below="@+id/FirstGoal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|number"
+                android:text="ThirdGoal"
+                android:ems="10"
+                android:id="@+id/ThirdGoal"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_marginTop="71dp"
+                android:layout_below="@+id/SecondGoal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                tools:text="Write your third goal!"
+                android:layout_weight="0.04" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_below="@+id/ThirdGoal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:id="@+id/GoalFour"
+                android:hint="Write your fourth goal"
+                android:text="GoalFour"
+                tools:text="Write your fourth goal!"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:layout_weight="0.04" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
