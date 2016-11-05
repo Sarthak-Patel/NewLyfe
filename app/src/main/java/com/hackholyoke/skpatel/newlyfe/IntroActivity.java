@@ -15,7 +15,6 @@ import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 import java.util.Calendar;
 import static com.google.android.gms.appindexing.AppIndex.*;
-import static com.hackholyoke.skpatel.newlyfe.R.layout.activity_intro;
 
 public class IntroActivity extends AppCompatActivity {
     public static Button button_test;
@@ -26,7 +25,6 @@ public class IntroActivity extends AppCompatActivity {
      */
     private GoogleApiClient client;
     private MediaPlayer mediaPlayer;
-    public String string = getString(R.string.chosen);
 
 
     @Override
@@ -48,8 +46,8 @@ public class IntroActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        myString="Workout";
                         Intent intent = new Intent("com.hackholyoke.skpatel.newlyfe.ChoiceActivity");
+                        intent.putExtra("State", 1);
                         startActivity(intent);
                     }
                 }
