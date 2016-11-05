@@ -1,5 +1,6 @@
 package com.hackholyoke.skpatel.newlyfe;
 
+import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,6 +16,8 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.Random;
+
 public class ChoiceActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     /**
@@ -22,6 +25,9 @@ public class ChoiceActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+
+    private String[] mTestArray;
+    private static final Random rgenerator = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +42,16 @@ public class ChoiceActivity extends AppCompatActivity {
         if (state == 1) {
             textView.setText(Deadline);
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.deadlinespeech);
+            Resources res = getResources();
+
+            mTestArray = res.getStringArray(R.array.myArray);
+
+            String q = mTestArray[rgenerator.nextInt(mTestArray.length)];
+
+            TextView tv = (TextView) findViewById(R.id.Quote);
+            tv.setText(q);
+
+
         } else if (state == 2) {
             textView.setText(Lost);
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.lostspeech);
