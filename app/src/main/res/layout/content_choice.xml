@@ -24,4 +24,31 @@
         tools:text="selectedText"
         android:textSize="24sp"
         android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/selectedText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:weightSum="1"
+        android:layout_height="600dp">
+
+        <VideoView
+            android:layout_width="wrap_content"
+            android:layout_height="363dp"
+            android:id="@+id/videoView" />
+
+        <TextView
+            android:text="Quote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Quote"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            tools:text="Quote" />
+    </LinearLayout>
+
 </RelativeLayout>

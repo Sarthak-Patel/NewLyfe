@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.hackholyoke.skpatel.newlyfe.ChoiceActivity">
+    tools:context="com.hackholyoke.skpatel.newlyfe.ChoiceActivity"
+    android:background="@drawable/background2">
 
     <include layout="@layout/content_choice" />
 
