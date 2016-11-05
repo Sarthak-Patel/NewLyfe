@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@drawable/background"
-    tools:context="com.hackholyoke.skpatel.newlyfe.MainActivity">
+    tools:context="com.hackholyoke.skpatel.newlyfe.IntroActivity">
 
-    <include layout="@layout/content_main"
+    <include layout="@layout/content_intro"
         android:id="@+id/IntroScreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
