@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="42dp"
             android:id="@+id/To"
-            tools:text="To A"
+            tools:text="To"
             android:contentDescription="Three"
             android:textColor="@android:color/white"
             android:textSize="30sp"
@@ -113,6 +113,15 @@
             android:layout_below="@+id/Step"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textAlignment="center" />
 
         <TextView
             android:text="Successful"
